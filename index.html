@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdrop Tapper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Tap Coin</h1>
+        </header>
+        <main>
+            <div class="score-display">
+                <p>Coins: <span id="score">0</span></p>
+            </div>
+            <div class="tap-area">
+                <button id="tapButton">
+                    <img src="https://via.placeholder.com/150/007bff/ffffff?Text=TAP+ME" alt="Tap Me">
+                </button>
+            </div>
+            <div class="energy-display">
+                <p>Energy: <span id="energy">100</span> / <span id="maxEnergy">100</span></p>
+                <progress id="energyBar" value="100" max="100"></progress>
+            </div>
+            <div class="claim-section">
+                <button id="claimButton">Claim Fake Airdrop</button>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by Your Bot</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--tg-theme-bg-color, #f0f0f0); /* Telegram theme background */
+    color: var(--tg-theme-text-color, #000000); /* Telegram theme text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.app-container {
+    background-color: var(--tg-theme-secondary-bg-color, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+header h1 {
+    color: var(--tg-theme-button-color, #007bff); /* Telegram theme button color for accent */
+    margin-bottom: 20px;
+}
+
+.score-display p, .energy-display p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tap-area {
+    margin-bottom: 20px;
+}
+
+#tapButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.1s ease-out;
+}
+
+#tapButton img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make it circular if using a circular placeholder */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#tapButton:active {
+    transform: scale(0.95);
+}
+
+.energy-display progress {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 20px;
+    accent-color: var(--tg-theme-button-color, #007bff);
+}
+
+.claim-section button {
+    background-color: var(--tg-theme-button-color, #007bff);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.claim-section button:hover {
+    background-color: #0056b3; /* Darken button on hover, consider using Telegram SDK for hover effects if available */
+}
+
+.claim-section button:disabled {
+    background-color: var(--tg-theme-hint-color, #cccccc); /* Telegram hint color for disabled state */
+    cursor: not-allowed;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: var(--tg-theme-hint-color, #888888); /* Telegram hint color */
+}
